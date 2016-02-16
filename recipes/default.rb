@@ -19,5 +19,5 @@ execute "configure new relic" do
 end
 
 service "newrelic-sysmond" do
-  action [ :start, :enalbe ]
+  action [ :start, :enable ]
 end
