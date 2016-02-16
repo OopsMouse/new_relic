@@ -1,0 +1,7 @@
+name 'new_relic'
+maintainer 'Noda Shinpei'
+maintainer_email 'noda.sin@gmail.com'
+license 'MIT'
+description 'Installs/Configures new_relic'
+long_description 'Installs/Configures new_relic'
+version '1.0.0'
