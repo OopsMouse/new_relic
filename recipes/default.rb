@@ -9,8 +9,11 @@ remote_file "#{Chef::Config[:file_cache_path]}/newrelic-repo.rpm" do
   action :create
 end
 
-rpm_package "newrelic-sysmond" do
-  source "#{Chef::Config[:file_cache_path]}/newrelic-repo.rpm"
+execute "Upgrade rpm repo" do
+  command "rpm -Uvh #{Chef::Config[:file_cache_path]}/newrelic-repo.rpm"
+end
+
+package "newrelic-sysmond" do
   action :install
 end
 
